@@ -15,6 +15,12 @@ export default function SlidingResponsiveNavbar() {
     document.getElementById("home-small-nav-item").style.opacity = "1";
     document.getElementById("profile-small-nav-item").style.opacity = "1";
     document.getElementById("contact-small-nav-item").style.opacity = "1";
+    document.getElementById("home-small-nav-item").style.transition =
+      "300ms ease-in 300ms";
+    document.getElementById("profile-small-nav-item").style.transition =
+      "300ms ease-in 300ms";
+    document.getElementById("contact-small-nav-item").style.transition =
+      "300ms ease-in 300ms";
   }
 
   function closeSlideMenu() {
@@ -25,6 +31,11 @@ export default function SlidingResponsiveNavbar() {
     document.getElementById("side-menu").style.width = "0";
     document.getElementById("topNavbarItems").style.opacity = "100%";
     document.getElementById("navBarLogo").style.opacity = "100%";
+    document.getElementById("home-small-nav-item").style.transition = "300ms";
+    document.getElementById("profile-small-nav-item").style.transition =
+      "300ms";
+    document.getElementById("contact-small-nav-item").style.transition =
+      "300ms";
   }
 
   return (
@@ -58,6 +69,17 @@ export default function SlidingResponsiveNavbar() {
       </nav>
       <div id="side-menu" className="side-nav">
         <ul>
+          <li>
+            <NavLink to="/" exact>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/companyprofile">Company Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/getintouch">צור קשר</NavLink>
+          </li>
           <li>
             {" "}
             <a id="home-small-nav-item" href="/">

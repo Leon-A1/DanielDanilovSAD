@@ -14,7 +14,7 @@
   background-color: rgb(240, 240, 240);
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 500ms;
+  transition: width 700ms;
   font-size: 110%;
   font-family: Arial;
 }
@@ -23,8 +23,9 @@
   padding: 10px;
   text-decoration: none;
   color: rgb(17, 17, 17);
-  transition: opacity 2100ms ease-in-out;
   transition: color 300ms ease-in-out;
+  opacity: 0;
+  transition: opacity 500ms ease-in 200ms;
 }
 .side-nav a:hover {
   color: rgb(116, 116, 116);
@@ -89,7 +90,7 @@
   #smaller-display-side-navbar-items {
     display: block;
     font-size: 90%;
-    transition: 3000ms;
+    transition: 500ms;
   }
 }
 
