@@ -6,21 +6,11 @@ export default function SplitScreenRow() {
     <div className="row">
       <div className="col">
         <div className="split-row-container">
-          <div
-            data-aos-offset="200"
-            data-aos="fade-right"
-            data-aos-delay="500"
-            className="split-row-col-image-container"
-          >
+          <div className="split-row-col-image-container">
             <img className="split-row-col-image" src={const_image3} alt="" />
           </div>
 
-          <div
-            data-aos-offset="200"
-            data-aos="fade-left"
-            data-aos-delay="500"
-            className="split-row-col-content"
-          >
+          <div className="split-row-col-content">
             קבלני בניין בדרום ובמרכז לאורך השנים, חברת פרג בנייה פעלה במסגרת
             פרויקטים רבים, ברמות מורכבות שונות ועבור המגזר הפרטי והציבורי. אזורי
             הפעילות של החברה נרחבים במיוחד, מעניקים שירותי קבלני בניין בדרום כמו

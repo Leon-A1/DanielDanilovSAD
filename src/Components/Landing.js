@@ -1,15 +1,13 @@
 import React from "react";
-// import "../Assets/css/aos.css";
 import Home from "./Home";
 import CompanyProfile from "./CompanyProfile";
 import NavBar from "./navBar";
 import GetInContact from "./GetInContact";
 import { Switch, Route } from "react-router-dom";
-// import AOS from "aos";
-// AOS.init();
 
 function Landing() {
   return (
+    // <div style={{ width: "100%" }}>
     <>
       <NavBar />
 
@@ -19,6 +17,7 @@ function Landing() {
         <Route path="/" component={Home} />
       </Switch>
     </>
+    // </div>
   );
 }
 

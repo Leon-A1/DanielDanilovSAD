@@ -39,10 +39,10 @@ export default function SlidingResponsiveNavbar() {
   }
 
   return (
-    <div style={{ zIndex: 10000 }}>
+    <div style={{ zIndex: 100, position: "fixed" }}>
       <nav className="navbar">
-        <span className="open-slide">
-          <button onClick={openSlideMenu}>
+        <span id="hamburger-button-id">
+          <button className="open-slide" onClick={openSlideMenu}>
             <svg width="30" height="30">
               <path d="M0,5 30,5" stroke="black" strokeWidth="5" />
               <path d="M0,14 30,14" stroke="black" strokeWidth="5" />
@@ -50,16 +50,15 @@ export default function SlidingResponsiveNavbar() {
             </svg>
           </button>
         </span>
-        <nav style={{}}></nav>
 
         <ul id="topNavbarItems">
           <li>
             <NavLink to="/" exact>
-              Home
+              עמוד הבית
             </NavLink>
           </li>
           <li>
-            <NavLink to="/companyprofile">Company Profile</NavLink>
+            <NavLink to="/companyprofile">פרופיל חברה</NavLink>
           </li>
           <li>
             <NavLink to="/getintouch">צור קשר</NavLink>
@@ -69,34 +68,16 @@ export default function SlidingResponsiveNavbar() {
       </nav>
       <div id="side-menu" className="side-nav">
         <ul>
-          <li>
+          <li id="home-small-nav-item">
             <NavLink to="/" exact>
-              Home
+              עמוד הבית
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/companyprofile">Company Profile</NavLink>
+          <li id="profile-small-nav-item">
+            <NavLink to="/companyprofile">פרופיל חברה</NavLink>
           </li>
-          <li>
+          <li id="contact-small-nav-item">
             <NavLink to="/getintouch">צור קשר</NavLink>
-          </li>
-          <li>
-            {" "}
-            <a id="home-small-nav-item" href="/">
-              עמוד הבית
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a id="profile-small-nav-item" href="/companyprofile">
-              פרופיל חברה
-            </a>
-          </li>
-          <li>
-            {" "}
-            <a id="contact-small-nav-item" href="/getintouch">
-              צור קשר
-            </a>
           </li>
         </ul>
 

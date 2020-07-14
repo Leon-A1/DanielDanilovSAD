@@ -2,8 +2,10 @@ import React from "react";
 import const_image1 from "../Assets/img/con3.jpg";
 import const_image4 from "../Assets/img/con5.jpg";
 import const_image6 from "../Assets/img/con6.jpg";
+import "../Assets/css/aos.css";
+import "../Assets/css/services.css";
 
-export default function FirstRow() {
+export default function Services() {
   return (
     <div className="row">
       <div className="col">
@@ -20,15 +22,13 @@ export default function FirstRow() {
           <br></br>
           <div className="col-content-partition">
             <img
-              data-aos="fade-up"
-              data-aos-delay="300"
               class="col-content-partition-img"
               src={const_image1}
               alt=""
             ></img>
             <h3> קבלן שלד</h3>
 
-            <p data-aos="fade-up" data-aos-delay="500">
+            <p>
               קבלן שלד כאשר חברת פרג בנייה משמשת קבלן שלד עבורכם בבניית בית
               החלומות שלכם, בבניית מבנה מסחרי, ציבורי וכל פרויקט בנייה, אתם
               יכולים להיות רגועים ובטוחים כי המבנה יהיה חזק, אמין ואיתן לאורך
@@ -37,14 +37,12 @@ export default function FirstRow() {
           </div>{" "}
           <div className="col-content-partition">
             <img
-              data-aos="fade-up"
-              data-aos-delay="300"
               class="col-content-partition-img"
               src={const_image6}
               alt=""
             ></img>
             <h3> קבלן גמר</h3>
-            <p data-aos="fade-up" data-aos-delay="500">
+            <p>
               {" "}
               חברת פרג בנייה, קבלן בניין רשום ומורשה, מצעה שירותי גמר איכותיים
               וקפדניים וניסיון רב שנים בתעשייה.
@@ -52,14 +50,12 @@ export default function FirstRow() {
           </div>{" "}
           <div className="col-content-partition">
             <img
-              data-aos="fade-up"
-              data-aos-delay="300"
               class="col-content-partition-img"
               src={const_image4}
               alt=""
             ></img>
             <h3> קבלן שיפוצים</h3>
-            <p data-aos="fade-up" data-aos-delay="500">
+            <p>
               {" "}
               נמאס לכם מאיך שביתכם נראה? העיצוב בו מיושן ואתם מרגישים שאתם רוצים
               שינוי? פרג בנייה מבצעת את כל סוגי השיפוצים לרבות החלפת ריצוף,

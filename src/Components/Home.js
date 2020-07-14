@@ -1,20 +1,22 @@
 import React from "react";
-import FirstRow from "./FirstRow";
-import SecondRow from "./SecondRow";
+import Services from "./Services";
+import Header from "./Header";
 import Footer from "./Footer";
 import InfoFooter from "./InfoFooter";
 import SplitScreenRowImgFirst from "./SplitScreenRowImgFirst";
-import SplitScreenRowContentFirst from "./SplitScreenRowContentFirst";
+// import SplitScreenRowContentFirst from "./SplitScreenRowContentFirst";
 import "../Assets/css/landing.css";
+import "../Assets/css/layout.css";
+
 import "../Assets/css/split-row.css";
 
 export default function Home() {
   return (
     <div className="main">
-      <SecondRow />
-      <FirstRow />
+      <Header />
+      <Services />
       <SplitScreenRowImgFirst />
-      <SplitScreenRowContentFirst />
+      {/* <SplitScreenRowContentFirst /> */}
       <InfoFooter />
       <Footer />
     </div>

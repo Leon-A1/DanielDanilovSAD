@@ -1,34 +1,19 @@
 import React from "react";
-import const_image3 from "../Assets/img/con5.jpg";
+import const_image2 from "../Assets/img/con.jpg";
+import "../Assets/css/header.css";
 
 export default function Header() {
   return (
-    <div>
-      <div className="row">
-        <div className="col">
-          <div className="col-content">
-            <div className="inner-col-content-col-1">
-              קבוצת קלוד נחמיאס הוקמה בשנת 1994 ע"י קלוד ושוש נחמיאס. קבוצת
-              "קלוד נחמיאס" הינה קבוצה ליזום ולביצוע המובילה בתחום הבנייה :
-              למגורים, למסחר, למשרדים ,לתעשייה ולמלונאות בכל רחבי הארץ, היום
-              הקבוצה פעילה: באשדוד, בתל אביב ,בראשון לציון ,במודיעין ,ברחובות ,
-              ביבנה, בגדרה ובאשקלון. הקבוצה הינה קבוצה פרטית הנמצאת בשליטת קלוד
-              ושוש נחמיאס המעורבים אישית :- קלוד, בייזום בתכנון, ליווי בשטח
-              הבנייה ובשיווק, תוך ניצול ניסיונו הרב בתחומים אלו.- שוש בתחום
-              הניהולי והאדמיניסטרטיבי של החברה ומגע אישי בתחום העיצוב שניכר בכל
-              הפרויקטים. הקבוצה נהנית מאמינות ויציבות פיננסית, וזוכה לאמינות
-              גבוהה בקרב הבנקים הגדולים בישראל, אשר מלווים את הפרויקטים ברחבי
-              הארץ. קבוצת קלוד נחמיאס נמצאת בתקופת צמיחה מתמדת תוך שמירה והקפדה
-              על עקרונות
-            </div>
-            <div className="inner-col-content-col-2">
-              {" "}
-              <h1>לקבלת הצעת מחיר בחינם!</h1>
-            </div>
-          </div>
-
-          <img className="second-back-img" src={const_image3} alt="" />
+    <div className="row">
+      <div className="col">
+        <div
+          style={{ textAlign: "right", padding: 60 }}
+          className="col-content-third-row"
+        >
+          <h1 style={{ margin: 10 }}>S . A . D</h1>
+          <h3 style={{ margin: 10 }}> דניאל דנילוב</h3>
         </div>
+        <img className="third-back-img" src={const_image2} alt="" />
       </div>
     </div>
   );
