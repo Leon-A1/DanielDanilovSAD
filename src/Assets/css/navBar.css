@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#ContentNavBarItem {
+  font-weight: 100;
+  color: #402100;
+  font-size: 90%;
+  padding: 15px;
+}
+#ContentNavBarItem a {
+  text-decoration: none;
+  color: #402100;
+}
+#ContentNavBarItem:hover {
+  font-weight: 100;
+
+  color: gray;
+  padding: 15px;
+  font-size: 90%;
+}
+.hidden-hr {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand-title {
+  max-width: 190px;
+  padding: 10px;
+}
+
+.navbar-links {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links li {
+  flex-direction: row;
+
+  font-size: 90%;
+  color: gray;
+  list-style: none;
+}
+.navbar-links a {
+  flex-direction: row;
+
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  flex-direction: row;
+  color: gray;
+}
+.navbar-links a:hover {
+  color: #dbb85a;
+}
+.navbar-links li:hover {
+  color: #dbb85a;
+}
+.navBarSearchBar {
+  margin: 15px;
+  text-align: center;
+}
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.5rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .hidden-hr {
+    display: block;
+  }
+  .brand-title {
+    max-width: 160px;
+    padding: 10px;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links li {
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-links a {
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .brand-title {
+    position: relative;
+    left: 0;
+  }
+
+  #ContentNavBarItem {
+    display: none;
+    /* font-size: 120%;
+    padding: 10px;
+    color: rgb(100, 45, 45);
+    font-weight: bold; */
+  }
+}

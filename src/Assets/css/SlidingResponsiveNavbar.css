@@ -1,0 +1,148 @@
+.navbar button {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav a:hover {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.side-nav button {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+  background-color: transparent;
+  border: none;
+}
+
+.side-nav a:hover {
+  color: gray;
+  font-weight: bold;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  transition: opacity 1s;
+  background-color: gray;
+
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+.navBarLogo {
+  max-width: 150px;
+  position: absolute;
+  margin: auto;
+  top: 5px;
+  right: 10px;
+  z-index: 0;
+  transition: opacity 1s;
+  padding-top: 0px;
+}
+#topNavbarItems {
+  color: black;
+  background-color: white;
+  width: 100%;
+  transition: opacity 1s;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 180px;
+  align-items: flex-end;
+  height: 32px;
+}
+#topNavbarItems a {
+  color: black;
+  background-color: white;
+  font-size: 80%;
+  padding: 10px;
+  width: 100%;
+  transition: opacity 1s;
+  text-decoration: none;
+}
+#topNavbarItems a:hover {
+  color: gray;
+  background-color: white;
+  font-size: 80%;
+  padding: 10px;
+  width: 100%;
+  transition: opacity 1s;
+  text-decoration: none;
+}
+#topNavbarItems ul {
+  list-style: none;
+  color: black;
+  background-color: white;
+  width: 100%;
+  transition: opacity 1s;
+}
+#topNavbarItems ul:hover {
+}
+#smaller-display-side-navbar-items {
+  display: none;
+}
+#side-search-bar {
+  margin-left: 28px;
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .navbar button {
+    display: block;
+  }
+  #topNavbarItems {
+    display: none;
+  }
+  #smaller-display-side-navbar-items {
+    display: block;
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 568px) {
+  .open-slide {
+    display: none;
+  }
+}
