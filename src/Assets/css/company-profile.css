@@ -1,0 +1,25 @@
+.Page-layout-div {
+  background-color: #eef3f7;
+  position: absolute;
+  width: 100%;
+  top: 120px;
+
+  /* bottom: 0; */
+  /* height: 100%; */
+}
+.company-profile-content {
+  background-color: rgb(229, 232, 236);
+  margin: 20px;
+  min-height: 500px;
+  text-align: center;
+  color: rgb(68, 68, 68);
+  font-size: 105%;
+  font-weight: 550;
+  margin-bottom: 300px;
+}
+.company-profile-content h2 {
+  padding: 30px 0 0 0;
+}
+.company-profile-content p {
+  padding: 30px;
+}

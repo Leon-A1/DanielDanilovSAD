@@ -1,5 +1,5 @@
 import React from "react";
-import const_image2 from "../Assets/img/con.jpg";
+import const_image2 from "../Assets/img/con2.jpg";
 import "../Assets/css/header.css";
 
 export default function Header() {

@@ -53,15 +53,15 @@ export default function SlidingResponsiveNavbar() {
 
         <ul id="topNavbarItems">
           <li>
-            <NavLink to="/" exact>
-              עמוד הבית
-            </NavLink>
+            <NavLink to="/getintouch">צור קשר</NavLink>
           </li>
           <li>
             <NavLink to="/companyprofile">פרופיל חברה</NavLink>
           </li>
           <li>
-            <NavLink to="/getintouch">צור קשר</NavLink>
+            <NavLink to="/" exact>
+              עמוד הבית
+            </NavLink>
           </li>
         </ul>
         <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" />
