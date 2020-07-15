@@ -3,7 +3,7 @@
   font-weight: 700;
   /* font-size: larger; */
   z-index: 5;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,6 +28,11 @@
   margin-bottom: 10px;
   margin-top: 10px;
   background-color: rgba(255, 255, 255, 1);
+}
+.col-content-grid h1 {
+  color: #13628d;
+  animation-name: fade-in-from-up;
+  animation-duration: 300ms;
 }
 .col-content-partition h3 {
   color: #13628d;

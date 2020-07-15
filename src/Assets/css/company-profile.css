@@ -1,8 +1,9 @@
 .Page-layout-div {
-  background-color: #eef3f7;
+  background-color: white;
   position: absolute;
   width: 100%;
   top: 100px;
+  color: #333;
 
   /* bottom: 0; */
   /* height: 100%; */
@@ -23,12 +24,27 @@
 }
 .company-profile-content h2 {
   text-align: center;
-  color: #dd0a0d;
+  color: #034187;
+  padding: 20px;
 }
 .company-profile-content p {
   padding: 10px;
 }
-
+.header-image {
+  width: 100%;
+  max-height: 250px;
+}
+.access-navbar {
+  text-align: right;
+  padding: 10px;
+  font-size: 80%;
+  font-weight: 400;
+  /* margin-right: 30px; */
+}
+.access-navbar a {
+  color: #2f7dcf;
+  /* margin-right: 30px; */
+}
 @keyframes fade-in {
   0% {
     opacity: 0;

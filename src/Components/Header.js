@@ -4,10 +4,16 @@ import "../Assets/css/header.css";
 
 export default function Header() {
   return (
-    <div className="row">
+    <div
+      // style={{ backgroundImage: "url(" + { const_image2 } + ")" }}
+      className="row"
+    >
       <div className="col">
         <div
-          style={{ textAlign: "right", padding: 60 }}
+          style={{
+            textAlign: "right",
+            padding: 60,
+          }}
           className="col-content-third-row"
         >
           <h1>קבוצת ס.א.ד בע"מ</h1>

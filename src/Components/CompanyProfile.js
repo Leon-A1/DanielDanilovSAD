@@ -1,10 +1,19 @@
 import React from "react";
 import "../Assets/css/company-profile.css";
+import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
 
 export default function CompanyProfile() {
   return (
     <div class="Page-layout-div">
+      <div className="page-header">
+        <img className="header-image" src={headerBackgroundImg} alt=""></img>
+      </div>
+
       <div className="company-profile-content">
+        <div className="access-navbar">
+          {" "}
+          <a href="/">דף הבית</a> » <a href="/">פרופיל החברה</a>
+        </div>
         <h2>פרופיל חברה</h2>
         <p>
           קבוצת ס.א.ד בע"מ, הינה חברת בנייה אשר מתמחה בבנייה רוויה (בתי דירות),

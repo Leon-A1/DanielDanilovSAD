@@ -2,7 +2,7 @@ import React from "react";
 import Services from "./Services";
 import Projects from "./Projects";
 import Header from "./Header";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import InfoFooter from "./InfoFooter";
 import SplitScreenRowImgFirst from "./SplitScreenRowImgFirst";
 // import SplitScreenRowContentFirst from "./SplitScreenRowContentFirst";
@@ -21,7 +21,7 @@ export default function Home() {
       <SplitScreenRowImgFirst />
       {/* <SplitScreenRowContentFirst /> */}
       <InfoFooter />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

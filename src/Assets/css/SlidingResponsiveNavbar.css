@@ -3,6 +3,7 @@
   display: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
   /* margin-top: 130; */
 }
 #hamburger-button-id {
@@ -38,23 +39,25 @@
   /* transition: opacity 500ms ease-in 200ms; */
 }
 .side-nav li {
+  text-decoration: none;
+
   padding: 20px;
 
   /* transition: transform 1000ms ease-in; */
   /* transition: opacity 100ms ease-in; */
 }
 .side-nav li:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
-.side-nav a {
-  color: #13628d;
-  text-decoration: none;
+.side-nav li a {
+  color: #8a8a8a;
   font-size: larger;
   font-weight: 600;
-  transition: 600ms;
+  transition: 1600ms;
+  text-decoration: none;
 }
 .side-nav a:hover {
-  color: #417ed5;
+  color: #3883c4;
   transition: 600ms;
 }
 #profile-small-nav-item {
@@ -84,6 +87,7 @@
   right: 22px;
   font-size: 36px;
   margin-left: 50px;
+  cursor: pointer;
 }
 
 .navBarLogo {
@@ -111,13 +115,14 @@
   font-size: 110%;
 }
 #topNavbarItems a {
-  color: #13628d;
+  text-decoration: none;
+  color: #8a8a8a;
   font-size: 110%;
   transition: 600ms;
   padding: 30px;
 }
 #topNavbarItems a:hover {
-  color: #417ed5;
+  color: #3883c4;
 
   transition: 600ms;
   text-decoration: none;

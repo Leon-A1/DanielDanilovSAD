@@ -1,6 +1,10 @@
 import React from "react";
 // import const_image1 from "../Assets/img/con3.jpg";
-import const_image4 from "../Assets/img/project.jpg";
+import const_image from "../Assets/img/project.jpg";
+// import const_image1 from "../Assets/img/project1.jpg";
+import const_image2 from "../Assets/img/project2.jpg";
+import const_image3 from "../Assets/img/project3.jpeg";
+import const_image4 from "../Assets/img/project4.jpg";
 // import const_image6 from "../Assets/img/con6.jpg";
 // import project_1 from "../Assets/img/project_1.jpg";
 
@@ -25,7 +29,7 @@ export default function Projects() {
           </h1>
           <br></br>
           <div className="project-partition">
-            <img src={const_image4} alt=""></img>
+            <img src={const_image} alt=""></img>
             <div className="text-area">
               <h4> בניית וילה , הכלנית 1 </h4>
               <h3>רמת השרון</h3>
@@ -44,7 +48,7 @@ export default function Projects() {
             </div>
           </div>{" "}
           <div className="project-partition">
-            <img src={const_image4} alt=""></img>
+            <img src={const_image2} alt=""></img>
             <div className="text-area">
               <h4>וילה אבא אחימאיר 25</h4>
               <h3>פתח תקווה</h3>
@@ -53,7 +57,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-partition">
-            <img src={const_image4} alt=""></img>
+            <img src={const_image3} alt=""></img>
             <div className="text-area">
               <h4>בניית וילה מיכאל וולך 2 </h4>
               <h3>קרית אונו</h3>
@@ -61,7 +65,7 @@ export default function Projects() {
               <h6> 0522503586</h6>
             </div>
           </div>
-          <div className="project-partition">
+          {/* <div className="project-partition">
             <img src={const_image4} alt=""></img>
             <div className="text-area">
               <h4>בניין 28 יח"ד רחוב שוהם </h4>
@@ -112,7 +116,6 @@ export default function Projects() {
               <h4>בניית שלד 6 קומות 12 יח"ד </h4>
               <h3>בת-ים</h3>
               <h5>גאון חברה לבנין והשקעות</h5>
-              {/* <h6>0526660969</h6> */}
             </div>
           </div>
           <div className="project-partition">
@@ -132,7 +135,7 @@ export default function Projects() {
               <h5>יואב קוטלר</h5>
               <h6>0547938452</h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>{" "}
     </div>
