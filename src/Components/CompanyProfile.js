@@ -1,6 +1,7 @@
 import React from "react";
 import "../Assets/css/company-profile.css";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
+import Footer from "../Components/InfoFooter";
 
 export default function CompanyProfile() {
   return (
@@ -12,7 +13,7 @@ export default function CompanyProfile() {
       <div className="company-profile-content">
         <div className="access-navbar">
           {" "}
-          <a href="/">דף הבית</a> » <a href="/">פרופיל החברה</a>
+          <a href="/">דף הבית</a> » <a href="/companyprofile">פרופיל החברה</a>
         </div>
         <h2>פרופיל חברה</h2>
         <p>
@@ -43,6 +44,7 @@ export default function CompanyProfile() {
           כל התחייבות מצידכם.
         </p>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

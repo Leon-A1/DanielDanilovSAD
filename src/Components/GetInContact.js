@@ -2,6 +2,7 @@ import React from "react";
 import "../Assets/css/company-profile.css";
 import Amap from "../Assets/img/ashdod-map.png";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
+import Footer from "../Components/InfoFooter";
 
 export default function GetInContact() {
   return (
@@ -12,7 +13,7 @@ export default function GetInContact() {
       <div className="company-profile-content">
         <div className="access-navbar">
           {" "}
-          <a href="/">דף הבית</a> » <a href="/">צרו קשר</a>
+          <a href="/">דף הבית</a> » <a href="/getintouch">צרו קשר</a>
         </div>
         <h2>צרו קשר</h2>
         <h3 style={{ padding: 10 }}>קבוצת ס.א.ד בע"מ</h3>
@@ -27,7 +28,8 @@ export default function GetInContact() {
           style={{
             width: "80%",
             maxWidth: 500,
-            marginBottom: 40,
+            marginTop: 30,
+            marginBottom: 10,
             marginLeft: 20,
             marginRight: 20,
             borderRadius: 10,
@@ -35,6 +37,7 @@ export default function GetInContact() {
           alt=""
         ></img>
       </div>
+      <Footer></Footer>
     </div>
   );
 }
