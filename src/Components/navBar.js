@@ -44,9 +44,9 @@ export default function SlidingResponsiveNavbar() {
         <span id="hamburger-button-id">
           <button className="open-slide" onClick={openSlideMenu}>
             <svg width="30" height="30">
-              <path d="M0,5 30,5" stroke="black" strokeWidth="5" />
-              <path d="M0,14 30,14" stroke="black" strokeWidth="5" />
-              <path d="M0,23 30,23" stroke="black" strokeWidth="5" />
+              <path d="M0,5 30,5" stroke="#13628d" strokeWidth="5" />
+              <path d="M0,14 30,14" stroke="#13628d" strokeWidth="5" />
+              <path d="M0,23 30,23" stroke="#13628d" strokeWidth="5" />
             </svg>
           </button>
         </span>

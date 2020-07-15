@@ -10,8 +10,8 @@ export default function Header() {
           style={{ textAlign: "right", padding: 60 }}
           className="col-content-third-row"
         >
-          <h1 style={{ margin: 10 }}>S . A . D</h1>
-          <h3 style={{ margin: 10 }}> דניאל דנילוב</h3>
+          <h1>קבוצת ס.א.ד בע"מ</h1>
+          <h3> דניאל דנילוב</h3>
         </div>
         <img className="third-back-img" src={const_image2} alt="" />
       </div>
