@@ -15,8 +15,9 @@ export default function Home() {
   return (
     <div className="main">
       <Header />
-      <Services />
       <Projects />
+
+      <Services />
       <SplitScreenRowImgFirst />
       {/* <SplitScreenRowContentFirst /> */}
       <InfoFooter />

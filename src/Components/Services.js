@@ -15,6 +15,8 @@ export default function Services() {
               margin: "auto",
               width: "100%",
               textAlign: "center",
+              fontWeight: 900,
+              padding: 20,
             }}
           >
             השירותים שלנו
