@@ -1,5 +1,6 @@
 import React from "react";
 import Services from "./Services";
+import Projects from "./Projects";
 import Header from "./Header";
 import Footer from "./Footer";
 import InfoFooter from "./InfoFooter";
@@ -15,6 +16,7 @@ export default function Home() {
     <div className="main">
       <Header />
       <Services />
+      <Projects />
       <SplitScreenRowImgFirst />
       {/* <SplitScreenRowContentFirst /> */}
       <InfoFooter />

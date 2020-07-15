@@ -8,20 +8,44 @@
   /* height: 100%; */
 }
 .company-profile-content {
-  background-color: rgb(229, 232, 236);
+  background-color: rgb(255, 255, 255);
   margin: 20px;
   min-height: 500px;
-  text-align: center;
-  color: rgb(68, 68, 68);
+  text-align: right;
   font-size: 105%;
   font-weight: 550;
   max-width: 700px;
   margin: auto;
   margin-bottom: 100px;
+  padding: 30px;
+  animation-name: fade-in-from-left;
+  animation-duration: 1400ms;
 }
 .company-profile-content h2 {
-  padding: 30px 0 0 0;
+  text-align: center;
+  color: #dd0a0d;
 }
 .company-profile-content p {
-  /* padding: 30px; */
+  padding: 10px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
