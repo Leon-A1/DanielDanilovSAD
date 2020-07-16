@@ -28,7 +28,11 @@ export default function Projects() {
             פרויקטים
           </h1>
           <br></br>
-          <div className="project-partition">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="300"
+            className="project-partition"
+          >
             <img src={const_image} alt=""></img>
             <div className="text-area">
               <h4> בניית וילה , הכלנית 1 </h4>
@@ -37,7 +41,11 @@ export default function Projects() {
               <h6>05086736371</h6>
             </div>
           </div>{" "}
-          <div className="project-partition">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="200"
+            className="project-partition"
+          >
             <img src={const_image4} alt=""></img>
             <div className="text-area">
               <h4> 2 עבודות גמרים כצנלסון</h4>
@@ -47,7 +55,11 @@ export default function Projects() {
               <h6>0543263318</h6>
             </div>
           </div>{" "}
-          <div className="project-partition">
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            className="project-partition"
+          >
             <img src={const_image2} alt=""></img>
             <div className="text-area">
               <h4>וילה אבא אחימאיר 25</h4>
@@ -56,7 +68,11 @@ export default function Projects() {
               <h6>0508673637</h6>
             </div>
           </div>
-          <div className="project-partition">
+          <div
+            data-aos="fade-left"
+            data-aos-offset="500"
+            className="project-partition"
+          >
             <img src={const_image3} alt=""></img>
             <div className="text-area">
               <h4>בניית וילה מיכאל וולך 2 </h4>
