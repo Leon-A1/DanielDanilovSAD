@@ -37,6 +37,7 @@ export default function Projects() {
             <div className="text-area">
               <h4> בניית וילה , הכלנית 1 </h4>
               <h3>רמת השרון</h3>
+              <br></br>
               <h5> אלי לוסטיגמן </h5>
               <h6>05086736371</h6>
             </div>
@@ -51,6 +52,7 @@ export default function Projects() {
               <h4> 2 עבודות גמרים כצנלסון</h4>
               <h3>גבעתיים</h3>
 
+              <br></br>
               <h5> עבד </h5>
               <h6>0543263318</h6>
             </div>
@@ -64,6 +66,7 @@ export default function Projects() {
             <div className="text-area">
               <h4>וילה אבא אחימאיר 25</h4>
               <h3>פתח תקווה</h3>
+              <br></br>
               <h5> אלי לוסטיגמן </h5>
               <h6>0508673637</h6>
             </div>
@@ -77,6 +80,7 @@ export default function Projects() {
             <div className="text-area">
               <h4>בניית וילה מיכאל וולך 2 </h4>
               <h3>קרית אונו</h3>
+              <br></br>
               <h5>שוקי יחזקאל </h5>
               <h6> 0522503586</h6>
             </div>
@@ -86,7 +90,7 @@ export default function Projects() {
             <div className="text-area">
               <h4>בניין 28 יח"ד רחוב שוהם </h4>
               <h3>באר יעקב</h3>
-              <h5> רפאל </h5>
+              <br></br><h5> רפאל </h5>
               <h6>0525965522</h6>
             </div>
           </div>
