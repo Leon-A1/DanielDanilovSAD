@@ -22,7 +22,11 @@ export default function Services() {
             השירותים שלנו
           </h1>
           <br></br>
-          <div className="col-content-partition">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="550"
+            className="col-content-partition"
+          >
             <img
               class="col-content-partition-img"
               src={const_image1}
@@ -36,7 +40,11 @@ export default function Services() {
               שנים רבות
             </p>
           </div>{" "}
-          <div className="col-content-partition">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="550"
+            className="col-content-partition"
+          >
             <img
               class="col-content-partition-img"
               src={const_image6}
@@ -49,7 +57,11 @@ export default function Services() {
               איכותיים וקפדניים וניסיון רב שנים בתעשייה
             </p>
           </div>{" "}
-          <div className="col-content-partition">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="550"
+            className="col-content-partition"
+          >
             <img
               class="col-content-partition-img"
               src={const_image4}

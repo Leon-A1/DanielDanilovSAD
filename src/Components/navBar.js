@@ -18,9 +18,9 @@ export default function SlidingResponsiveNavbar() {
     document.getElementById("home-small-nav-item").style.transition =
       "300ms ease-in 300ms";
     document.getElementById("profile-small-nav-item").style.transition =
-      "300ms ease-in 300ms";
+      "300ms ease-in 500ms";
     document.getElementById("contact-small-nav-item").style.transition =
-      "300ms ease-in 300ms";
+      "300ms ease-in 700ms";
   }
 
   function closeSlideMenu() {
@@ -31,11 +31,11 @@ export default function SlidingResponsiveNavbar() {
     document.getElementById("side-menu").style.width = "0";
     document.getElementById("topNavbarItems").style.opacity = "100%";
     document.getElementById("navBarLogo").style.opacity = "100%";
-    document.getElementById("home-small-nav-item").style.transition = "300ms";
+    document.getElementById("home-small-nav-item").style.transition = "200ms";
     document.getElementById("profile-small-nav-item").style.transition =
-      "300ms";
+      "150ms";
     document.getElementById("contact-small-nav-item").style.transition =
-      "300ms";
+      "100ms";
   }
 
   return (

@@ -30,7 +30,7 @@ export default function Projects() {
           <br></br>
           <div
             data-aos="fade-right"
-            data-aos-offset="300"
+            data-aos-offset="250"
             className="project-partition"
           >
             <img src={const_image} alt=""></img>
