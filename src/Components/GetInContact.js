@@ -20,7 +20,6 @@ export default function GetInContact() {
         <p>515861862</p>
         <p>קבלן רשום בסיווג 100 ג1 </p>
         <p> מס' קבלן (רישיון): 33404</p>
-        <p>טלפון- 053-8268640</p>
         <p>danieldvxl@gmail.com</p>
         <p>אשדוד</p>
         <img
