@@ -12,7 +12,8 @@ export default function Header() {
         <div
           style={{
             textAlign: "right",
-            padding: 60,
+            paddingTop: 150,
+            paddingBottom: 150,
           }}
           className="col-content-third-row"
         >
