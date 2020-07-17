@@ -4,10 +4,7 @@ import "../Assets/css/header.css";
 
 export default function Header() {
   return (
-    <div
-      // style={{ backgroundImage: "url(" + { const_image2 } + ")" }}
-      className="row"
-    >
+    <div className="row">
       <div className="col">
         <div
           style={{
