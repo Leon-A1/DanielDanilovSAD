@@ -1,10 +1,16 @@
-import React from "react";
-import "../Assets/css/company-profile.css";
+import React, { useEffect } from "react";
+import Aos from "aos";
 import Amap from "../Assets/img/ashdod-map.png";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
 import Footer from "../Components/InfoFooter";
+import "../Assets/css/aos.css";
+import "../Assets/css/company-profile.css";
+import "../Assets/css/leave-contact.css";
 
 export default function GetInContact() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <div class="Page-layout-div">
       <div className="page-header">
@@ -25,17 +31,34 @@ export default function GetInContact() {
         <img
           src={Amap}
           style={{
-            width: "80%",
+            width: "100%",
             maxWidth: 500,
             marginTop: 30,
-            marginBottom: 10,
-            marginLeft: 20,
-            marginRight: 20,
+            marginBottom: 30,
             borderRadius: 10,
           }}
           alt=""
         ></img>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="contact-form-div"
+        >
+          <form>
+            <h4>השאירו פרטים ונציגנו יחזרו אליכם בהקדם האפשרי</h4>
+            <span>שם</span>
+            <input type="text" placeholder="John"></input>
+            <span>אימייל</span>
+
+            <input type="email" placeholder="John@gmail.com"></input>
+            <span>נייד</span>
+
+            <input type="text" placeholder="053-548-1212"></input>
+            <button>שלח</button>
+          </form>
+        </div>
       </div>
+
       <Footer></Footer>
     </div>
   );
