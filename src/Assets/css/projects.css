@@ -6,8 +6,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  /* padding-left: 175px;
-  padding-right: 175px; */
   padding: 30px;
   text-align: center;
   font-family: Arial;
@@ -16,7 +14,6 @@
 }
 .project-partition {
   max-width: 350px;
-  /* border: solid rgb(165, 165, 165, 0.6) 1px; */
   font-size: normal;
   display: block;
   right: 0;
@@ -24,14 +21,10 @@
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  /* animation-name: projects-fade;
-  animation-duration: 1500ms; */
-  /* margin-bottom: 50px; */
 }
 .text-area {
   height: 40%;
   color: white;
-  /* max-height: 175px; */
   background-color: rgb(1, 69, 137, 0.9);
 }
 .project-partition h4 {
@@ -47,8 +40,6 @@
   font-size: 135%;
   color: white;
   font-weight: 600;
-}
-.project-partition h6 {
 }
 .project-partition img {
   width: 100%;

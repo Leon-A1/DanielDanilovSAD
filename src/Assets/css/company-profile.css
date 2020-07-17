@@ -43,11 +43,9 @@
   padding: 10px;
   font-size: 80%;
   font-weight: 400;
-  /* margin-right: 30px; */
 }
 .access-navbar a {
   color: #2f7dcf;
-  /* margin-right: 30px; */
 }
 @keyframes fade-in {
   0% {

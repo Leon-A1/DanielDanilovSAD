@@ -4,7 +4,6 @@
   background-color: transparent;
   outline: none;
   cursor: pointer;
-  /* margin-top: 130; */
 }
 #hamburger-button-id {
   position: fixed;
@@ -33,22 +32,13 @@
 .side-nav NavLink {
   padding: 10px;
   text-decoration: none;
-
-  /* transition: 300ms ease-in-out; */
   opacity: 0;
-  /* transition: opacity 500ms ease-in 200ms; */
 }
 .side-nav li {
   text-decoration: none;
-
   padding: 20px;
+}
 
-  /* transition: transform 1000ms ease-in; */
-  /* transition: opacity 100ms ease-in; */
-}
-.side-nav li:hover {
-  /* transform: scale(1.2); */
-}
 .side-nav li a {
   color: #8a8a8a;
   font-size: larger;

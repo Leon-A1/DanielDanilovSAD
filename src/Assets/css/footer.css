@@ -110,7 +110,7 @@
 }
 
 .close-hidden-footer-form-button:hover {
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240);
   display: block;
   margin: auto;
   margin-top: 30px;
@@ -118,5 +118,5 @@
 
   color: black;
   transition: 300ms;
-  outline: none;
+  outline: none; */
 }

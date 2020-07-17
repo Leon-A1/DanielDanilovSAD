@@ -7,7 +7,6 @@ import { Switch, Route } from "react-router-dom";
 
 function Landing() {
   return (
-    // <div style={{ width: "100%" }}>
     <>
       <NavBar />
 
@@ -17,7 +16,6 @@ function Landing() {
         <Route path="/" component={Home} />
       </Switch>
     </>
-    // </div>
   );
 }
 

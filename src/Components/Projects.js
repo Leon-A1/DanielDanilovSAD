@@ -1,13 +1,8 @@
 import React from "react";
-// import const_image1 from "../Assets/img/con3.jpg";
 import const_image from "../Assets/img/project.jpg";
-// import const_image1 from "../Assets/img/project1.jpg";
 import const_image2 from "../Assets/img/project2.jpg";
 import const_image3 from "../Assets/img/project3.jpeg";
 import const_image4 from "../Assets/img/project4.jpg";
-// import const_image6 from "../Assets/img/con6.jpg";
-// import project_1 from "../Assets/img/project_1.jpg";
-
 import "../Assets/css/aos.css";
 import "../Assets/css/projects.css";
 
@@ -85,77 +80,6 @@ export default function Projects() {
               <h6> 0522503586</h6>
             </div>
           </div>
-          {/* <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>בניין 28 יח"ד רחוב שוהם </h4>
-              <h3>באר יעקב</h3>
-              <br></br><h5> רפאל </h5>
-              <h6>0525965522</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>בניית וילה סטרומה 13 ב</h4>
-              <h3>נס ציונה</h3>
-              <h5> אלי לוסטיגמן </h5>
-              <h6>0508673637</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>תמ"א 38 </h4>
-              <h3>פתח תקווה</h3>
-              <h5> דורון </h5>
-              <h6>0556678088</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>בניית וילות</h4>
-              <h3>גבעת ברנר</h3>
-              <h5>דן הנגבי </h5>
-              <h6>0545962808</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>בניין 7 יח"ד </h4>
-              <h3>יפו</h3>
-              <h5>מיקי ביילי</h5>
-              <h6>0526660969</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>בניית שלד 6 קומות 12 יח"ד </h4>
-              <h3>בת-ים</h3>
-              <h5>גאון חברה לבנין והשקעות</h5>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>שיחזור בית עתיק</h4>
-              <h3>יפו</h3>
-              <h5>ראובן גבעתי</h5>
-              <h6>0523747474</h6>
-            </div>
-          </div>
-          <div className="project-partition">
-            <img src={const_image4} alt=""></img>
-            <div className="text-area">
-              <h4>תמ"א 38 </h4>
-              <h3>רמת גן</h3>
-              <h5>יואב קוטלר</h5>
-              <h6>0547938452</h6>
-            </div>
-          </div> */}
         </div>
       </div>{" "}
     </div>

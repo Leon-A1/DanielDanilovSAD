@@ -1,5 +1,4 @@
 .col-content-third-row {
-  /* border: solid rgba(0, 0, 0, 0.05) 1px; */
   z-index: 5;
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@
 }
 .col-content-third-row {
   width: 100%;
-  /* height: 100%; */
 
   animation: pulse 5000ms ease-in-out;
   animation-fill-mode: forwards;
@@ -29,6 +27,4 @@
   text-shadow: black 1px 1px 1px;
 
   color: #13628d;
-}
-.third-back-img {
 }

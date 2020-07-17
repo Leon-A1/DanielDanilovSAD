@@ -1,7 +1,6 @@
 .col-content-grid {
   border: solid white 1px;
   font-weight: 700;
-  /* font-size: larger; */
   z-index: 1;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -17,7 +16,6 @@
 }
 .col-content-partition {
   max-width: 250px;
-  /* border: solid rgb(165, 165, 165, 0.6) 1px; */
   border-radius: 25px;
   padding: 30px;
   font-size: normal;
