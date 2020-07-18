@@ -1,6 +1,5 @@
 .projects-grid {
   border: solid white 1px;
-  font-weight: 700;
   z-index: 5;
   display: flex;
   flex-direction: row;
@@ -15,26 +14,30 @@
 .project-partition {
   max-width: 350px;
   font-size: normal;
-  display: block;
+  display: inline-block;
   right: 0;
   left: 0;
   margin: auto;
   margin-bottom: 10px;
   margin-top: 10px;
+  box-shadow: black 3px 3px 3px;
 }
 .text-area {
-  height: 40%;
+  height: 30%;
+  height: 100px;
   color: white;
   background-color: rgb(1, 69, 137, 0.9);
+  padding-top: 20px;
 }
 .project-partition h4 {
   color: #ffffff;
   animation-name: project-fade-in-from-up;
   animation-duration: 800ms;
-  animation-delay: 800ms;
+  animation-delay: 100ms;
   padding-top: 10px;
   padding: 5px;
   font-size: 140%;
+  font-weight: 400;
 }
 .project-partition h3 {
   font-size: 135%;
@@ -43,9 +46,11 @@
 }
 .project-partition img {
   width: 100%;
-  height: 55%;
+  height: 200px;
+  /* height: 70%; */
   animation-name: fade-in-from-up;
   animation-duration: 900ms;
+  margin-bottom: -4px;
 }
 .cproject-partition p {
   animation-name: fade-in-from-down;

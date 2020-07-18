@@ -16,12 +16,15 @@ export default function GetInContact() {
       <div className="page-header">
         <img className="header-image" src={headerBackgroundImg} alt=""></img>
       </div>
+
       <div className="company-profile-content">
         <div className="access-navbar">
           {" "}
           <a href="/">דף הבית</a> » <a href="/getintouch">צרו קשר</a>
         </div>
+
         <h2>צרו קשר</h2>
+
         <h3 style={{ padding: 10 }}>קבוצת ס.א.ד בע"מ</h3>
         <p>515861862</p>
         <p>קבלן רשום בסיווג 100 ג1 </p>
@@ -33,6 +36,8 @@ export default function GetInContact() {
           style={{
             width: "100%",
             maxWidth: 500,
+            maxHeight: 150,
+            alignContent: "center",
             marginTop: 30,
             marginBottom: 30,
             borderRadius: 10,

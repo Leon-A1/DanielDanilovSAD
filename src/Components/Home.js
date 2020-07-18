@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Header from "./Header";
 import InfoFooter from "./InfoFooter";
 import SplitScreenRowImgFirst from "./SplitScreenRowImgFirst";
+import LandingPageForm from "./LandingPageForm";
 import "../Assets/css/landing.css";
 import "../Assets/css/layout.css";
 import "../Assets/css/aos.css";
@@ -21,6 +22,7 @@ export default function Home() {
       <Projects />
       <Services />
       <SplitScreenRowImgFirst />
+      <LandingPageForm />
       <InfoFooter />
     </div>
   );

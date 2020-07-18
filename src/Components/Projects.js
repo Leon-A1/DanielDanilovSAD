@@ -25,7 +25,7 @@ export default function Projects() {
           <br></br>
           <div
             data-aos="fade-right"
-            data-aos-offset="250"
+            data-aos-offset="175"
             className="project-partition"
           >
             <img src={const_image} alt=""></img>
@@ -33,8 +33,8 @@ export default function Projects() {
               <h4> בניית וילה , הכלנית 1 </h4>
               <h3>רמת השרון</h3>
               <br></br>
-              <h5> אלי לוסטיגמן </h5>
-              <h6>05086736371</h6>
+              {/* <h5> אלי לוסטיגמן </h5> */}
+              {/* <h6>05086736371</h6> */}
             </div>
           </div>{" "}
           <div
@@ -48,8 +48,8 @@ export default function Projects() {
               <h3>גבעתיים</h3>
 
               <br></br>
-              <h5> עבד </h5>
-              <h6>0543263318</h6>
+              {/* <h5> עבד </h5> */}
+              {/* <h6>0543263318</h6> */}
             </div>
           </div>{" "}
           <div
@@ -62,13 +62,13 @@ export default function Projects() {
               <h4>וילה אבא אחימאיר 25</h4>
               <h3>פתח תקווה</h3>
               <br></br>
-              <h5> אלי לוסטיגמן </h5>
-              <h6>0508673637</h6>
+              {/* <h5> אלי לוסטיגמן </h5> */}
+              {/* <h6>0508673637</h6> */}
             </div>
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset="400"
+            data-aos-offset="300"
             className="project-partition"
           >
             <img src={const_image3} alt=""></img>
@@ -76,8 +76,8 @@ export default function Projects() {
               <h4>בניית וילה מיכאל וולך 2 </h4>
               <h3>קרית אונו</h3>
               <br></br>
-              <h5>שוקי יחזקאל </h5>
-              <h6> 0522503586</h6>
+              {/* <h5>שוקי יחזקאל </h5> */}
+              {/* <h6> 0522503586</h6> */}
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ export default function Services() {
           <br></br>
           <div
             data-aos="fade-up"
-            data-aos-offset="450"
+            data-aos-offset="350"
             className="col-content-partition"
           >
             <img
@@ -42,7 +42,7 @@ export default function Services() {
           </div>{" "}
           <div
             data-aos="fade-up"
-            data-aos-offset="450"
+            data-aos-offset="350"
             className="col-content-partition"
           >
             <img
@@ -59,7 +59,7 @@ export default function Services() {
           </div>{" "}
           <div
             data-aos="fade-up"
-            data-aos-offset="450"
+            data-aos-offset="350"
             className="col-content-partition"
           >
             <img

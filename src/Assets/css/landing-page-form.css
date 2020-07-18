@@ -1,0 +1,111 @@
+.landing-page-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  text-align: right;
+  color: #034187;
+  padding-bottom: 50px;
+  margin: auto;
+  border-radius: 5px;
+}
+.landing-page-form h4 {
+  font-weight: 500;
+  color: rgb(119, 119, 119);
+  font-size: 110%;
+  /* font-family: Signika, sans-serif; */
+  text-align: center;
+  margin-top: 30px;
+}
+.landing-page-form form span {
+  padding: 30px 0 0 0;
+}
+.landing-page-form form input {
+  padding: 10px;
+  color: #333;
+  border: solid #034187 1px;
+  border-radius: 3px;
+  text-align: right;
+}
+.landing-page-form form input:focus {
+  border: solid #2f7dcf 1px;
+
+  outline: none;
+}
+.landing-page-form form input::placeholder {
+  color: rgb(182, 182, 182);
+}
+.landing-page-form button {
+  padding: 10px;
+  margin: 20px 0 0 0;
+  color: #2f7dcf;
+  background-color: rgb(255, 255, 255);
+  border: solid #034187 1px;
+  transition: 600ms;
+  font-size: 110%;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.landing-page-form button:hover {
+  color: white;
+  border: solid #2f7dcf 1px;
+  background-color: #2f7dcf;
+
+  transition: 600ms;
+}
+#checkbox-id-desktop {
+  display: none;
+}
+#checkbox-id-mobile {
+  margin: 5px;
+  margin-top: 15px;
+}
+.landing-page-form p {
+  font-size: 85%;
+  font-weight: 100;
+  color: rgb(119, 119, 119);
+  /* margin-right: 5px; */
+}
+@media (min-width: 950px) {
+  .landing-page-form {
+    width: 100%;
+  }
+  .landing-page-form form {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .landing-page-form input {
+    /* max-height: 30px; */
+    margin-top: 30px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  .landing-page-form button {
+    /* max-height: 30px; */
+    margin-top: 30px;
+    min-width: 150px;
+    border-radius: 3px;
+    margin-right: 20px;
+  }
+  .landing-page-form span {
+    display: none;
+  }
+  .landing-page-form p {
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 85%;
+    font-weight: 100;
+    color: rgb(119, 119, 119);
+  }
+  #checkbox-id-mobile {
+    display: none;
+  }
+  #checkbox-id-desktop {
+    display: inline-block;
+  }
+}

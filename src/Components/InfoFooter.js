@@ -1,5 +1,7 @@
 import React from "react";
 import "../Assets/css/info-footer.css";
+import facebook_logo from "../Assets/img/facebook_sad.png";
+import instagram_logo from "../Assets/img/instagram_sad.png";
 
 export default function Footer() {
   return (
@@ -7,14 +9,22 @@ export default function Footer() {
       <div className="col">
         <div className="info-footer">
           <div className="info-footer-div">
-            <h6>המלך יהוא 2 ,אשדוד</h6>
-
-            <h5>קבוצת סאד בע"מ</h5>
-
-            <h5>S.A.D GROUP LTD</h5>
-
-            <h5>515861862</h5>
-            <h6>© 2018</h6>
+            <p className="adress">המלך יהוא 2 ,אשדוד</p>
+            <img src={facebook_logo} alt=""></img>
+            <img src={instagram_logo} alt=""></img>
+            <ul>
+              <li>
+                <a href="/getintouch ">צור קשר</a>
+              </li>
+              <li>
+                <a href="/companyprofile">פרופיל חברה</a>
+              </li>
+              <li>
+                <a href="/" exact>
+                  עמוד הבית
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
