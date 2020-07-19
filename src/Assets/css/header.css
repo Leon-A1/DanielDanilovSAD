@@ -7,20 +7,19 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
-  font-family: Arial;
   width: 100%;
   border-radius: 5px;
 }
 .col-content-third-row {
   width: 100%;
-
-  animation: pulse 5000ms ease-in-out;
+  animation: pulse 5000ms ease-in;
   animation-fill-mode: forwards;
 }
 .col-content-third-row h1 {
-  font-size: 200%;
-  font-weight: 900;
+  font-size: 300%;
+  /* font-weight: 600; */
   text-shadow: black 1px 1px 1px;
+  font-family: Assistant;
 }
 .col-content-third-row h3 {
   font-weight: 800;

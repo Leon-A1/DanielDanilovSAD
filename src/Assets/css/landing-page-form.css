@@ -1,7 +1,7 @@
 .landing-page-form form {
   display: flex;
   flex-direction: column;
-  max-width: 450px;
+  max-width: 400px;
   text-align: right;
   color: #034187;
   padding-bottom: 50px;
