@@ -25,11 +25,13 @@
 }
 .email-me {
   text-decoration: none;
-  color: #3f3f3f;
+  color: #6b6b6b;
   transition: 300ms ease;
+  font-weight: 600;
 }
 .email-me:hover {
-  color: #034187;
+  color: #3883c4;
+
   transition: 300ms ease;
 }
 .company-profile-content form {
