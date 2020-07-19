@@ -1,8 +1,8 @@
 .col-content-grid {
   border: solid white 1px;
-  font-weight: 700;
+  font-weight: 200;
   z-index: 1;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,8 +11,11 @@
   padding-right: 175px;
   padding: 30px;
   text-align: center;
-  font-family: Arial;
-  color: rgb(63, 63, 63);
+  /* font-family: "Assistant", sans-serif; */
+  /* font-family: "Arial", sans-serif; */
+  font-family: "Assistant", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(151, 151, 151);
 }
 .col-content-partition {
   max-width: 250px;

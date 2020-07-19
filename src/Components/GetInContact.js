@@ -29,7 +29,9 @@ export default function GetInContact() {
         <p>515861862</p>
         <p>קבלן רשום בסיווג 100 ג1 </p>
         <p> מס' קבלן (רישיון): 33404</p>
-        <p>danieldvxl@gmail.com</p>
+        <a className="email-me" href="mailto:danieldvxl@gmail.com">
+          <p>danieldvxl@gmail.com</p>
+        </a>
         <p>אשדוד</p>
         <img
           src={Amap}

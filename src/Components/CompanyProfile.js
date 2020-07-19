@@ -12,7 +12,6 @@ export default function CompanyProfile() {
 
       <div className="company-profile-content">
         <div className="access-navbar">
-          {" "}
           <a href="/">דף הבית</a> » <a href="/companyprofile">פרופיל החברה</a>
         </div>
         <h2>פרופיל חברה</h2>

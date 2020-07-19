@@ -10,8 +10,8 @@
   margin: 20px;
   min-height: 500px;
   text-align: right;
-  font-size: 105%;
-  font-weight: 450;
+  font-size: 95%;
+  font-weight: 200;
   max-width: 700px;
   margin: auto;
   margin-bottom: 100px;
@@ -19,6 +19,18 @@
   animation-name: fade-in-from-left;
   animation-duration: 1400ms;
   margin-top: 250px;
+  color: #6b6b6b;
+  font-family: "Assistant", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.email-me {
+  text-decoration: none;
+  color: #6b6b6b;
+  transition: 300ms ease;
+}
+.email-me:hover {
+  color: #034187;
+  transition: 300ms ease;
 }
 .company-profile-content form {
   /* margin-bottom: 50px; */
