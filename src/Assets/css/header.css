@@ -22,7 +22,7 @@
 .col-content-third-row h1 {
   font-size: 400%;
   /* font-weight: 600; */
-  text-shadow: black 1px 1px 1px;
+  text-shadow: #3883c4 1px 1px 1px;
   animation: pulse 5000ms ease-in;
   animation-fill-mode: forwards;
   font-family: Assistant, sans-serif;
@@ -30,8 +30,11 @@
   padding: 20px;
 }
 .col-content-third-row h3 {
-  font-weight: 800;
-  text-shadow: black 1px 1px 1px;
+  font-weight: 700;
 
-  color: #13628d;
+  color: #3883c4;
+  animation: pulse 7000ms ease-in;
+  animation-fill-mode: forwards;
+
+  font-size: 175%;
 }

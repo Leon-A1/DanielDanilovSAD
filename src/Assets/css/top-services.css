@@ -36,7 +36,7 @@
 }
 .top-service-col p {
   font-size: 100%;
-  margin: 10px;
+  padding: 10px;
   font-family: Assistant, sans-serif;
   color: #6b6b6b;
   text-align: right;
@@ -54,6 +54,7 @@
   color: #6b6b6b;
   margin-bottom: 20px;
   margin-left: 20px;
+  padding: 10px;
 }
 .top-service-content-row-text h3 {
   font-size: 175%;

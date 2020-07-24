@@ -11,7 +11,7 @@
   min-height: 500px;
   text-align: right;
   font-size: 100%;
-  font-weight: 200;
+  font-weight: 500;
   max-width: 700px;
   margin: auto;
   margin-bottom: 100px;
@@ -20,8 +20,7 @@
   animation-duration: 1400ms;
   /* margin-top: 250px; */
   color: #6b6b6b;
-  font-family: "Assistant", sans-serif;
-  font-family: "Open Sans", sans-serif;
+  font-family: Assistant, sans-serif;
 }
 .email-me {
   text-decoration: none;
@@ -144,7 +143,7 @@
 }
 @media (min-width: 600px) {
   .Page-layout-div {
-    top: 225px;
+    top: 165px;
   }
   .col-content-third-row-company-profile {
     padding-top: 175px;

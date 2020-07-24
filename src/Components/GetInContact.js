@@ -33,7 +33,7 @@ export default function GetInContact() {
         <h2>צרו קשר</h2>
 
         <h3 style={{ padding: 10 }}>קבוצת ס.א.ד בע"מ</h3>
-        <p>515861862</p>
+        <p>515861862 ח.פ</p>
         <p>קבלן רשום בסיווג 100 ג1 </p>
         <p> מס' קבלן (רישיון): 33404</p>
         <a className="email-me" href="mailto:danieldvxl@gmail.com">
