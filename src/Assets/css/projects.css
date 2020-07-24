@@ -7,7 +7,6 @@
   justify-content: flex-start;
   padding: 30px;
   text-align: center;
-  font-family: Arial;
   color: #01458a;
   max-width: 1200px;
 }
@@ -26,6 +25,11 @@
     whitesmoke 100%
   );
 }
+.projects-row h1 {
+  font-family: Assistant, sans-serif;
+  font-size: 225%;
+  font-weight: 600;
+}
 .project-partition {
   max-width: 350px;
   font-size: normal;
@@ -36,6 +40,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: black 3px 3px 3px;
+  font-family: Assistant, sans-serif;
 }
 .text-area {
   height: 30%;
@@ -43,6 +48,7 @@
   color: white;
   background-color: #014589e6;
   padding-top: 20px;
+  font-family: Assistant, sans-serif;
 }
 .project-partition h4 {
   color: #ffffff;
@@ -58,6 +64,7 @@
   font-size: 135%;
   color: white;
   font-weight: 600;
+  font-family: Assistant, sans-serif;
 }
 .project-partition img {
   width: 100%;
@@ -70,6 +77,7 @@
 .cproject-partition p {
   animation-name: fade-in-from-down;
   animation-duration: 900ms;
+  font-family: Assistant, sans-serif;
 }
 @keyframes fade-in-from-right {
   0% {
@@ -132,5 +140,11 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@media (min-width: 600px) {
+  .projects-row h1 {
+    font-size: 250%;
   }
 }

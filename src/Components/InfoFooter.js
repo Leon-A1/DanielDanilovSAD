@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="col">
         <div className="info-footer">
           <div className="info-footer-div">
-            <p className="adress">המלך יהוא 2 ,אשדוד</p>
+            <p className="adress">אשדוד</p>
             <img src={facebook_logo} alt=""></img>
             <img src={instagram_logo} alt=""></img>
             <ul>

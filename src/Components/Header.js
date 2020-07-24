@@ -6,14 +6,7 @@ export default function Header() {
   return (
     <div className="row">
       <div className="col">
-        <div
-          style={{
-            textAlign: "right",
-            paddingTop: 150,
-            paddingBottom: 150,
-          }}
-          className="col-content-third-row"
-        >
+        <div className="col-content-third-row">
           <h1>קבוצת ס.א.ד בע"מ</h1>
         </div>
         <img className="third-back-img" src={const_image2} alt="" />

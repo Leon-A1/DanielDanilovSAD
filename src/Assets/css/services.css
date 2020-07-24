@@ -32,7 +32,10 @@
   z-index: 1;
 }
 .col-content-grid h1 {
-  color: #13628d;
+  color: #00458a;
+  font-size: 225%;
+  font-weight: 600;
+  font-family: Assistant, sans-serif;
   animation-name: fade-in-from-up;
   animation-duration: 300ms;
 }
@@ -98,5 +101,10 @@
   100% {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@media (min-width: 600px) {
+  .col-content-grid h1 {
+    font-size: 250%;
   }
 }

@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
-import Services from "./Services";
+// import Services from "./Services";
 import Projects from "./Projects";
 import Header from "./Header";
 import InfoFooter from "./InfoFooter";
 import SplitScreenRowImgFirst from "./SplitScreenRowImgFirst";
+import SplitScreenRowContentFirst from "./SplitScreenRowContentFirst";
 import LandingPageForm from "./LandingPageForm";
+import TopServicesRow from "./TopServicesRow";
 import "../Assets/css/landing.css";
 import "../Assets/css/layout.css";
 import "../Assets/css/aos.css";
@@ -19,8 +21,11 @@ export default function Home() {
   return (
     <div className="main">
       <Header />
+      <TopServicesRow />
+
       <Projects />
-      <Services />
+      {/* <Services /> */}
+      <SplitScreenRowContentFirst />
       <SplitScreenRowImgFirst />
       <LandingPageForm />
       <InfoFooter />

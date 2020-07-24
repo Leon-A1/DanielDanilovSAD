@@ -13,8 +13,15 @@ export default function GetInContact() {
   }, []);
   return (
     <div class="Page-layout-div">
-      <div className="page-header">
-        <img className="header-image" src={headerBackgroundImg} alt=""></img>
+      <div className="row">
+        <div className="col">
+          <div className="col-content-third-row-company-profile"></div>
+          <img
+            className="third-back-img-company-profile"
+            src={headerBackgroundImg}
+            alt=""
+          />
+        </div>
       </div>
 
       <div className="company-profile-content">

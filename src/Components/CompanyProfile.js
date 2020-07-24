@@ -2,14 +2,24 @@ import React from "react";
 import "../Assets/css/company-profile.css";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
 import Footer from "../Components/InfoFooter";
+// import Header from "../Components/Header";
 
 export default function CompanyProfile() {
   return (
     <div class="Page-layout-div">
-      <div className="page-header">
+      {/* <div className="page-header">
         <img className="header-image" src={headerBackgroundImg} alt=""></img>
+      </div> */}
+      <div className="row">
+        <div className="col">
+          <div className="col-content-third-row-company-profile"></div>
+          <img
+            className="third-back-img-company-profile"
+            src={headerBackgroundImg}
+            alt=""
+          />
+        </div>
       </div>
-
       <div className="company-profile-content">
         <div className="access-navbar">
           <a href="/">דף הבית</a> » <a href="/companyprofile">פרופיל החברה</a>

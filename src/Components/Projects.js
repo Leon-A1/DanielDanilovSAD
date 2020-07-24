@@ -25,7 +25,7 @@ export default function Projects() {
             </h1>
             <br></br>
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-offset="175"
               className="project-partition"
             >
@@ -39,7 +39,7 @@ export default function Projects() {
               </div>
             </div>{" "}
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-offset="200"
               className="project-partition"
             >
@@ -54,7 +54,7 @@ export default function Projects() {
               </div>
             </div>{" "}
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-offset="200"
               className="project-partition"
             >
@@ -68,7 +68,7 @@ export default function Projects() {
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-offset="300"
               className="project-partition"
             >
