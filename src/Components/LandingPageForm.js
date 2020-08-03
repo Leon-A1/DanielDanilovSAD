@@ -29,26 +29,28 @@ export default function LandingPageForm() {
   const NewPhoneNumber = useRef();
 
   return (
-    <div className="landing-page-form">
-      <h4>
+    <div>
+      <h4 className="service-provide-span">
         ! נשמח לדבר ולעזור<br></br> השאירו את פרטיכם ונחזור אליכם בהקדם
       </h4>
-      <span>שם</span>
-      <input ref={NewName} type="text" placeholder="*שם"></input>
-      <span>אימייל</span>
-      <input ref={NewEmailAdress} type="email" placeholder="*מייל"></input>
-      <span>נייד</span>
-      <input ref={NewPhoneNumber} type="text" placeholder="*טלפון"></input>
-      <input id="checkbox-id-desktop" type="checkbox"></input>
-      <p>
-        {" "}
-        אני מסכים/מסכימה לקבל חומר פרסומי{" "}
-        <input id="checkbox-id-mobile" type="checkbox"></input>
-      </p>
-      <button action="#" onClick={SubmitNewEmail}>
-        שלח
-      </button>
-      <p id="form-response-message">{Message}</p>
+      <div className="landing-page-form">
+        <span>שם</span>
+        <input ref={NewName} type="text" placeholder="*שם"></input>
+        <span>אימייל</span>
+        <input ref={NewEmailAdress} type="email" placeholder="*מייל"></input>
+        <span>נייד</span>
+        <input ref={NewPhoneNumber} type="text" placeholder="*טלפון"></input>
+        <input id="checkbox-id-desktop" type="checkbox"></input>
+        <p>
+          {" "}
+          אני מסכים/מסכימה לקבל חומר פרסומי{" "}
+          <input id="checkbox-id-mobile" type="checkbox"></input>
+        </p>
+        <button action="#" onClick={SubmitNewEmail}>
+          שלח
+        </button>
+        <p id="form-response-message">{Message}</p>
+      </div>
     </div>
   );
 }
