@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import axios from "axios";
 import Aos from "aos";
 import Amap from "../Assets/img/ashdod-map.png";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
@@ -11,8 +12,33 @@ export default function GetInContact() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
+  const [Message, setMessage] = useState();
+
+  function SubmitNewEmail() {
+    console.log(NewEmailAdress.current.value);
+    if (
+      NewEmailAdress.current.value &&
+      NewPhoneNumber.current.value &&
+      NewName.current.value
+    )
+      axios
+        .post("https://s-a-d-group-server.herokuapp.com/save_email", {
+          email_adress: NewEmailAdress.current.value,
+          phone_number: NewPhoneNumber.current.value,
+          name: NewName.current.value,
+        })
+        .then((res) => {
+          console.log(res);
+          setMessage(" !פנייתכם התקבלה תודה");
+        })
+        .catch((e) => setMessage("אופס..משהו קרה, אנא נסו שנית"));
+  }
+  const NewEmailAdress = useRef();
+  const NewName = useRef();
+  const NewPhoneNumber = useRef();
+
   return (
-    <div class="Page-layout-div">
+    <div className="Page-layout-div">
       <div className="row">
         <div className="col">
           <div className="col-content-third-row-company-profile"></div>
@@ -58,18 +84,28 @@ export default function GetInContact() {
           data-aos-delay="200"
           className="contact-form-div"
         >
-          <form>
-            <h4>השאירו פרטים ונציגנו יחזרו אליכם בהקדם האפשרי</h4>
-            <span>שם</span>
-            <input type="text" placeholder="John"></input>
-            <span>אימייל</span>
+          <h4>השאירו פרטים ונציגנו יחזרו אליכם בהקדם האפשרי</h4>
+          <span>שם</span>
+          <input ref={NewName} type="text" placeholder="John"></input>
+          <span>אימייל</span>
 
-            <input type="email" placeholder="John@gmail.com"></input>
-            <span>נייד</span>
+          <input
+            ref={NewEmailAdress}
+            type="email"
+            placeholder="John@gmail.com"
+          ></input>
+          <span>נייד</span>
 
-            <input type="text" placeholder="053-548-1212"></input>
-            <button>שלח</button>
-          </form>
+          <input
+            ref={NewPhoneNumber}
+            type="text"
+            placeholder="053-548-1212"
+          ></input>
+          <button action="#" onClick={SubmitNewEmail}>
+            שלח
+          </button>
+
+          <p id="form-response-message">{Message}</p>
         </div>
       </div>
 

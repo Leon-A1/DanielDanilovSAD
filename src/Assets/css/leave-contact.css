@@ -1,4 +1,4 @@
-.contact-form-div form {
+.contact-form-div {
   display: flex;
   flex-direction: column;
   max-width: 500px;
@@ -12,10 +12,10 @@
 .contact-form-div img {
   max-width: 100px;
 }
-.contact-form-div form span {
+.contact-form-div span {
   padding: 30px 0 0 0;
 }
-.contact-form-div form input {
+.contact-form-div input {
   padding: 10px;
   color: #333;
   border: solid #034187 1px;
@@ -23,12 +23,12 @@
   text-align: right;
   margin-top: 1px;
 }
-.contact-form-div form input:focus {
+.contact-form-div input:focus {
   border: solid #2f7dcf 1px;
 
   outline: none;
 }
-.contact-form-div form input::placeholder {
+.contact-form-div input::placeholder {
   color: rgb(182, 182, 182);
 }
 .contact-form-div button {
