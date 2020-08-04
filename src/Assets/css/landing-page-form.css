@@ -114,4 +114,7 @@
   #checkbox-id-desktop {
     display: inline-block;
   }
+  #form-response-message {
+    font-size: 80%;
+  }
 }
