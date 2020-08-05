@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Assistant&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="page-loader.css" />
 
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -36,6 +37,10 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="main-spinner" class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

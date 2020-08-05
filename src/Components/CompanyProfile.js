@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Assets/css/company-profile.css";
 import headerBackgroundImg from "../Assets/img/page-header-background.jpg";
 import Footer from "../Components/InfoFooter";
 // import Header from "../Components/Header";
+function closeSlideMenu() {
+  document.getElementById("home-small-nav-item").style.opacity = "0";
+  document.getElementById("profile-small-nav-item").style.opacity = "0";
+  document.getElementById("contact-small-nav-item").style.opacity = "0";
 
+  document.getElementById("side-menu").style.width = "0";
+  // document.getElementById("topNavbarItems").style.opacity = "100%";
+  // document.getElementById("navBarLogo").style.opacity = "100%";
+  document.getElementById("home-small-nav-item").style.transition = "200ms";
+  document.getElementById("profile-small-nav-item").style.transition = "150ms";
+  document.getElementById("contact-small-nav-item").style.transition = "100ms";
+}
 export default function CompanyProfile() {
+  useEffect(() => {
+    closeSlideMenu();
+  }, []);
   return (
     <div class="Page-layout-div">
       {/* <div className="page-header">

@@ -12,8 +12,6 @@
 }
 .col-content-third-row {
   width: 100%;
-  animation: pulse 1500ms ease-in;
-  animation-fill-mode: forwards;
   text-align: right;
   padding-top: 150px;
   padding-bottom: 150px;

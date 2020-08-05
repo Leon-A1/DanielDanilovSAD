@@ -7,10 +7,22 @@ import Footer from "../Components/InfoFooter";
 import "../Assets/css/aos.css";
 import "../Assets/css/company-profile.css";
 import "../Assets/css/leave-contact.css";
+function closeSlideMenu() {
+  document.getElementById("home-small-nav-item").style.opacity = "0";
+  document.getElementById("profile-small-nav-item").style.opacity = "0";
+  document.getElementById("contact-small-nav-item").style.opacity = "0";
 
+  document.getElementById("side-menu").style.width = "0";
+  // document.getElementById("topNavbarItems").style.opacity = "100%";
+  // document.getElementById("navBarLogo").style.opacity = "100%";
+  document.getElementById("home-small-nav-item").style.transition = "200ms";
+  document.getElementById("profile-small-nav-item").style.transition = "150ms";
+  document.getElementById("contact-small-nav-item").style.transition = "100ms";
+}
 export default function GetInContact() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
+    closeSlideMenu();
   }, []);
   const [Message, setMessage] = useState();
 
