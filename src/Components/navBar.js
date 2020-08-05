@@ -40,6 +40,9 @@ export default function SlidingResponsiveNavbar() {
 
   return (
     <div style={{ zIndex: 100, position: "fixed" }}>
+      <div className="desktop-navbar-logo-wrapper">
+        <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" />
+      </div>
       <nav className="navbar">
         <span id="hamburger-button-id">
           <button className="open-slide" onClick={openSlideMenu}>
@@ -52,7 +55,7 @@ export default function SlidingResponsiveNavbar() {
         </span>
 
         <ul id="topNavbarItems">
-          <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" />
+          {/* <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" /> */}
 
           <li>
             <NavLink to="/getintouch">צור קשר</NavLink>
