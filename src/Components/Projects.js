@@ -7,6 +7,10 @@ import "../Assets/css/aos.css";
 import "../Assets/css/projects.css";
 
 export default function Projects() {
+  function hideSpinner() {
+    document.getElementById("main-spinner").style.opacity = "0";
+    document.getElementById("main-spinner").style.display = "none";
+  }
   return (
     <div className="row">
       <div className="col">
@@ -29,7 +33,7 @@ export default function Projects() {
               data-aos-offset="175"
               className="project-partition"
             >
-              <img src={const_image} alt=""></img>
+              <img onLoad={hideSpinner} src={const_image} alt=""></img>
               <div className="text-area">
                 <h4> בניית וילה , הכלנית 1 </h4>
                 <h3>רמת השרון</h3>
