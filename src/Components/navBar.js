@@ -2,6 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Assets/css/SlidingResponsiveNavbar.css";
 import logo from "../Assets/img/logo.png";
+import facebook_icon from "../Assets/img/navbar_facebook.png";
+import instagram_icon from "../Assets/img/navbar_instagram.png";
+import access_icon from "../Assets/img/navbar_access.png";
 import "../Assets/css/aos.css";
 // import Home from "./Home";
 // import CompanyProfile from "./CompanyProfile";
@@ -40,6 +43,8 @@ export default function SlidingResponsiveNavbar() {
 
   return (
     <div style={{ zIndex: 100, position: "fixed" }}>
+      <img className="access" src={access_icon} alt=""></img>
+
       <div className="desktop-navbar-logo-wrapper">
         <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" />
       </div>
@@ -56,6 +61,21 @@ export default function SlidingResponsiveNavbar() {
 
         <ul id="topNavbarItems">
           {/* <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" /> */}
+          <li>
+            <NavLink to="/getintouch">
+              <img src={facebook_icon} alt=""></img>
+              <img src={instagram_icon} alt=""></img>
+            </NavLink>
+          </li>
+          <li style={{ marginLeft: 40 }}>
+            <NavLink to="/getintouch">עב</NavLink>
+          </li>
+          <li>
+            <NavLink to="/getintouch">FR</NavLink>
+          </li>
+          <li style={{ marginRight: 20 }}>
+            <NavLink to="/getintouch">EN</NavLink>
+          </li>
 
           <li>
             <NavLink to="/getintouch">צור קשר</NavLink>
@@ -89,6 +109,8 @@ export default function SlidingResponsiveNavbar() {
           &times;
         </button>
       </div>
+      {/* <div className="accessibility_icon">
+      </div> */}
     </div>
   );
 }

@@ -9,7 +9,8 @@
   position: fixed;
   top: 37px;
   left: 35px;
-  z-index: 1500;
+  z-index: 15;
+  filter: drop-shadow(1px 1px 1px black);
 }
 
 .side-nav {
@@ -20,7 +21,7 @@
   z-index: 15;
   top: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.99);
+  background-color: rgba(255, 255, 255, 1);
   overflow-x: hidden;
   padding-top: 150px;
   transition: width 700ms;
@@ -85,15 +86,14 @@
   position: fixed;
   top: 2px;
   right: 20px;
-  z-index: 25;
+  z-index: 15;
   padding: 1px;
   border: solid rgba(240, 240, 240, 0.1) 0.5px;
 }
 
 #topNavbarItems {
   font-family: Assistant, sans-serif;
-
-  font-weight: 300;
+  font-weight: 100;
   width: 100%;
   list-style: none;
   display: flex;
@@ -103,17 +103,16 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(250, 250, 250, 0.95);
-  height: 100px;
+  background-color: rgba(250, 250, 250, 1);
   z-index: 10;
-  font-size: 110%;
+  height: 100px;
+  filter: drop-shadow(1px 1px 15px black);
 }
 #topNavbarItems a {
   text-decoration: none;
   color: #8a8a8a;
-  font-size: 110%;
   transition: 600ms;
-  padding: 30px;
+  padding: 15px;
 }
 #topNavbarItems a:hover {
   color: #3883c4;
@@ -121,10 +120,25 @@
   transition: 600ms;
   text-decoration: none;
 }
-
+#topNavbarItems li img {
+  max-width: 25px;
+  margin: 1px;
+}
 #side-search-bar {
   margin-left: 28px;
   margin-bottom: 20px;
+}
+
+.access {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  width: 75px;
+  z-index: 3500;
+  height: 75px;
+  background-color: #2f7dcf;
+  padding: 10px;
+  display: none;
 }
 @media (max-width: 900px) {
   .navbar button {
@@ -145,18 +159,18 @@
 }
 
 @media (min-width: 900px) {
+  .access {
+    display: block;
+  }
   .navBarLogo {
     position: relative;
-    max-width: 200px;
-    margin-top: 10px;
+    max-width: 175px;
+    margin-top: 20px;
     margin-bottom: 10px;
-    margin-right: 10px;
   }
 
   #topNavbarItems {
     height: 140px;
-    font-size: 100%;
-    padding-left: 105px;
   }
   #topNavbarItems li {
     margin-top: 80px;

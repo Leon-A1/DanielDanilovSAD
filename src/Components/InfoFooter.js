@@ -2,6 +2,7 @@ import React from "react";
 import "../Assets/css/info-footer.css";
 import facebook_logo from "../Assets/img/facebook_sad.png";
 import instagram_logo from "../Assets/img/instagram_sad.png";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,10 +16,10 @@ export default function Footer() {
             <img src={instagram_logo} alt=""></img>
             <ul>
               <li>
-                <a href="/getintouch ">צור קשר</a>
+                <NavLink to="/getintouch">צור קשר</NavLink>
               </li>
               <li>
-                <a href="/companyprofile">פרופיל חברה</a>
+                <NavLink to="/companyprofile">פרופיל חברה</NavLink>
               </li>
               <li>
                 <a href="/" exact>

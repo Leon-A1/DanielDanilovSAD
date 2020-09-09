@@ -7,6 +7,8 @@
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
+  filter: drop-shadow(1px 1px 5px black);
+
   width: 100%;
   border-radius: 5px;
 }
@@ -20,8 +22,8 @@
 .col-content-third-row h1 {
   font-size: 400%;
   /* font-weight: 600; */
-  text-shadow: #3883c4 1px 1px 1px;
-  animation: pulse 5000ms ease-in;
+  text-shadow: #000000 1px 1px 1px;
+  animation: pulse 4000ms ease-in;
   animation-fill-mode: forwards;
   font-family: Assistant, sans-serif;
   text-align: center;
@@ -29,10 +31,12 @@
 }
 .col-content-third-row h3 {
   font-weight: 700;
-
-  color: #3883c4;
-  animation: pulse 7000ms ease-in;
+  animation: pulse 5000ms ease-in;
   animation-fill-mode: forwards;
 
   font-size: 175%;
+}
+.col-content-third-row h4 {
+  animation: pulse 7000ms ease-in;
+  animation-fill-mode: forwards;
 }
