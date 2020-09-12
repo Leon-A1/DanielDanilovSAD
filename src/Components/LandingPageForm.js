@@ -4,26 +4,52 @@ import "../Assets/css/landing-page-form.css";
 
 export default function LandingPageForm() {
   const [Message, setMessage] = useState();
+  function ValidateEmail(mail) {
+    if (
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        mail
+      )
+    ) {
+      return true;
+    }
+    return false;
+  }
+  function ValidatePhone(number) {
+    if (/^[0-9-]*$/.test(number)) {
+      return true;
+    }
+    return false;
+  }
 
   function SubmitNewEmail() {
     console.log(NewEmailAdress.current.value);
-    if (
+    if (!ValidateEmail(NewEmailAdress.current.value)) {
+      setMessage("כתובת אימייל לא תקינה");
+      document.getElementById("lds-ring-id").style.display = "none";
+    } else if (!ValidatePhone(NewPhoneNumber.current.value)) {
+      setMessage("מספר לא תקין");
+      document.getElementById("lds-ring-id").style.display = "none";
+    } else if (
       NewEmailAdress.current.value &&
       NewPhoneNumber.current.value &&
       NewName.current.value
-    )
+    ) {
+      document.getElementById("lds-ring-id").style.display = "inline-block";
       axios
-        .post("https://s-a-d-group-server.herokuapp.com/save_email", {
+        .post("http://127.0.0.1:5000/save_email", {
           email_adress: NewEmailAdress.current.value,
           phone_number: NewPhoneNumber.current.value,
           name: NewName.current.value,
         })
         .then((res) => {
           console.log(res);
-          setMessage(" !פנייתכם התקבלה תודה");
+          setMessage(" פנייתכם התקבלה תודה");
+          document.getElementById("lds-ring-id").style.display = "none";
         })
         .catch((e) => setMessage("אופס..משהו קרה, אנא נסו שנית"));
+    }
   }
+
   const NewEmailAdress = useRef();
   const NewName = useRef();
   const NewPhoneNumber = useRef();
@@ -49,6 +75,12 @@ export default function LandingPageForm() {
         <button action="#" onClick={SubmitNewEmail}>
           שלח
         </button>
+        <div id="lds-ring-id" className="lds-ring">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <p id="form-response-message">{Message}</p>
       </div>
     </div>
