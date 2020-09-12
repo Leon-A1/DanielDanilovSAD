@@ -36,7 +36,7 @@ export default function LandingPageForm() {
     ) {
       document.getElementById("lds-ring-id").style.display = "inline-block";
       axios
-        .post("http://127.0.0.1:5000/save_email", {
+        .post("https://s-a-d-group-server.herokuapp.com/save_email", {
           email_adress: NewEmailAdress.current.value,
           phone_number: NewPhoneNumber.current.value,
           name: NewName.current.value,
