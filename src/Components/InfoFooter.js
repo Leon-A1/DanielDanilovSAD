@@ -1,7 +1,7 @@
 import React from "react";
 import "../Assets/css/info-footer.css";
-import facebook_logo from "../Assets/img/facebook_sad.png";
-import instagram_logo from "../Assets/img/instagram_sad.png";
+// import facebook_logo from "../Assets/img/facebook_sad.png";
+// import instagram_logo from "../Assets/img/instagram_sad.png";
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {
@@ -12,8 +12,15 @@ export default function Footer() {
           <div className="info-footer-div">
             <p className="adress">אשדוד</p>
 
-            <img src={facebook_logo} alt=""></img>
-            <img src={instagram_logo} alt=""></img>
+            <i
+              class="fab fa-facebook-square"
+              style={{ fontSize: "150%", padding: 10 }}
+            ></i>
+            <i
+              class="fab fa-instagram"
+              style={{ fontSize: "150%", padding: 10 }}
+            ></i>
+
             <ul>
               <li>
                 <NavLink to="/getintouch">צור קשר</NavLink>

@@ -2,13 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Assets/css/SlidingResponsiveNavbar.css";
 import logo from "../Assets/img/logo.png";
-import facebook_icon from "../Assets/img/navbar_facebook.png";
-import instagram_icon from "../Assets/img/navbar_instagram.png";
 import access_icon from "../Assets/img/navbar_access.png";
 import "../Assets/css/aos.css";
-// import Home from "./Home";
-// import CompanyProfile from "./CompanyProfile";
-// import GetInContact from "./GetInContact";
 
 export default function SlidingResponsiveNavbar() {
   function openSlideMenu() {
@@ -18,18 +13,22 @@ export default function SlidingResponsiveNavbar() {
     document.getElementById("home-small-nav-item").style.opacity = "1";
     document.getElementById("profile-small-nav-item").style.opacity = "1";
     document.getElementById("contact-small-nav-item").style.opacity = "1";
+    document.getElementById("phone_icon").style.opacity = "1";
     document.getElementById("home-small-nav-item").style.transition =
       "300ms ease-in 300ms";
     document.getElementById("profile-small-nav-item").style.transition =
       "300ms ease-in 500ms";
     document.getElementById("contact-small-nav-item").style.transition =
       "300ms ease-in 700ms";
+    document.getElementById("phone_icon").style.transition =
+      "300ms ease-in 900ms";
   }
 
   function closeSlideMenu() {
     document.getElementById("home-small-nav-item").style.opacity = "0";
     document.getElementById("profile-small-nav-item").style.opacity = "0";
     document.getElementById("contact-small-nav-item").style.opacity = "0";
+    document.getElementById("phone_icon").style.opacity = "0";
 
     document.getElementById("side-menu").style.width = "0";
     // document.getElementById("topNavbarItems").style.opacity = "100%";
@@ -39,6 +38,7 @@ export default function SlidingResponsiveNavbar() {
       "150ms";
     document.getElementById("contact-small-nav-item").style.transition =
       "100ms";
+    document.getElementById("phone_icon").style.transition = "50ms";
   }
 
   return (
@@ -60,11 +60,15 @@ export default function SlidingResponsiveNavbar() {
         </span>
 
         <ul id="topNavbarItems">
-          {/* <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" /> */}
           <li>
             <NavLink to="/getintouch">
-              <img src={facebook_icon} alt=""></img>
-              <img src={instagram_icon} alt=""></img>
+              <i
+                class="fab fa-facebook-square"
+                style={{ fontSize: "150%" }}
+              ></i>
+            </NavLink>
+            <NavLink to="/getintouch">
+              <i class="fab fa-instagram" style={{ fontSize: "150%" }}></i>
             </NavLink>
           </li>
           <li style={{ marginLeft: 40 }}>
@@ -83,10 +87,17 @@ export default function SlidingResponsiveNavbar() {
           <li>
             <NavLink to="/companyprofile">פרופיל חברה</NavLink>
           </li>
+
           <li>
             <NavLink to="/" exact>
               עמוד הבית
             </NavLink>
+          </li>
+
+          <li>
+            <a target="_blank" href="tel:+972538268640">
+              <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
+            </a>
           </li>
         </ul>
       </nav>
@@ -103,14 +114,17 @@ export default function SlidingResponsiveNavbar() {
           <li id="contact-small-nav-item">
             <NavLink to="/getintouch">צור קשר</NavLink>
           </li>
+          <li id="phone_icon" style={{ opacity: 0 }}>
+            <a target="_blank" href="tel:+972538268640">
+              <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
+            </a>
+          </li>
         </ul>
 
         <button className="btn-close" onClick={closeSlideMenu}>
           &times;
         </button>
       </div>
-      {/* <div className="accessibility_icon">
-      </div> */}
     </div>
   );
 }
