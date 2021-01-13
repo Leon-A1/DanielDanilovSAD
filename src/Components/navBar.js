@@ -95,7 +95,7 @@ export default function SlidingResponsiveNavbar() {
           </li>
 
           <li>
-            <a target="_blank" href="tel:+972538268640">
+            <a href="tel:+972538268640">
               <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
             </a>
           </li>
@@ -115,7 +115,7 @@ export default function SlidingResponsiveNavbar() {
             <NavLink to="/getintouch">צור קשר</NavLink>
           </li>
           <li id="phone_icon" style={{ opacity: 0 }}>
-            <a target="_blank" href="tel:+972538268640">
+            <a href="tel:+972538268640">
               <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
             </a>
           </li>
