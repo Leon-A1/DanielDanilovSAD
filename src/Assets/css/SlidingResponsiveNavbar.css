@@ -7,14 +7,14 @@
 }
 #hamburger-button-id {
   position: fixed;
-  top: 10%;
+  top: 40px;
   left: 10%;
   z-index: 15;
   filter: drop-shadow(1px 1px 1px black);
 }
 .mobile-phone-icon {
   position: fixed;
-  top: 10.2%;
+  top: 42px;
   left: 25%;
   z-index: 15;
   color: #8a8a8a;
