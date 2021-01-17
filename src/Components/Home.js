@@ -29,7 +29,7 @@ export default function Home() {
     closeSlideMenu();
   }, []);
   return (
-    <div className="main">
+    <div className="main" onClick={closeSlideMenu}>
       <Header />
       <TopServicesRow />
 

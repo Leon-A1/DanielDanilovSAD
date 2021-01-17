@@ -20,7 +20,7 @@ export default function CompanyProfile() {
     closeSlideMenu();
   }, []);
   return (
-    <div class="Page-layout-div">
+    <div class="Page-layout-div" onClick={closeSlideMenu}>
       {/* <div className="page-header">
         <img className="header-image" src={headerBackgroundImg} alt=""></img>
       </div> */}

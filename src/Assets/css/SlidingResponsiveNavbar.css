@@ -33,10 +33,9 @@
   background-color: rgba(255, 255, 255, 1);
   overflow-x: hidden;
   padding-top: 150px;
-  transition: width 700ms;
-  /* font-size: 110%; */
-  font-family: Arial;
+  transition: width 600ms;
   overflow-y: hidden;
+  filter: drop-shadow(2px 1px 15px black);
 }
 
 .side-nav NavLink {
@@ -51,7 +50,6 @@
 
 .side-nav li a {
   color: #8a8a8a;
-  /* font-size: larger; */
   font-weight: 400;
   transition: 1600ms;
   text-decoration: none;
@@ -102,7 +100,6 @@
 
 #topNavbarItems {
   font-family: Assistant, sans-serif;
-  /* font-weight: 100; */
   width: 100%;
   list-style: none;
   display: flex;
@@ -158,7 +155,6 @@
   }
   #smaller-display-side-navbar-items {
     display: block;
-    /* font-size: 90%; */
     transition: 500ms;
   }
   #topNavbarItems a {

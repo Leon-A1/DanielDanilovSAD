@@ -50,7 +50,7 @@ export default function GetInContact() {
   const NewPhoneNumber = useRef();
 
   return (
-    <div className="Page-layout-div">
+    <div className="Page-layout-div" onClick={closeSlideMenu}>
       <div className="row">
         <div className="col">
           <div className="col-content-third-row-company-profile"></div>
