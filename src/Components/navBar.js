@@ -8,37 +8,27 @@ import "../Assets/css/aos.css";
 export default function SlidingResponsiveNavbar() {
   function openSlideMenu() {
     document.getElementById("side-menu").style.width = "250px";
-    // document.getElementById("navBarLogo").style.opacity = "30%";
-    // document.getElementById("topNavbarItems").style.opacity = "30%";
     document.getElementById("home-small-nav-item").style.opacity = "1";
     document.getElementById("profile-small-nav-item").style.opacity = "1";
     document.getElementById("contact-small-nav-item").style.opacity = "1";
-    document.getElementById("phone_icon").style.opacity = "1";
     document.getElementById("home-small-nav-item").style.transition =
       "300ms ease-in 300ms";
     document.getElementById("profile-small-nav-item").style.transition =
       "300ms ease-in 500ms";
     document.getElementById("contact-small-nav-item").style.transition =
       "300ms ease-in 700ms";
-    document.getElementById("phone_icon").style.transition =
-      "300ms ease-in 900ms";
   }
 
   function closeSlideMenu() {
     document.getElementById("home-small-nav-item").style.opacity = "0";
     document.getElementById("profile-small-nav-item").style.opacity = "0";
     document.getElementById("contact-small-nav-item").style.opacity = "0";
-    document.getElementById("phone_icon").style.opacity = "0";
-
     document.getElementById("side-menu").style.width = "0";
-    // document.getElementById("topNavbarItems").style.opacity = "100%";
-    // document.getElementById("navBarLogo").style.opacity = "100%";
     document.getElementById("home-small-nav-item").style.transition = "200ms";
     document.getElementById("profile-small-nav-item").style.transition =
       "150ms";
     document.getElementById("contact-small-nav-item").style.transition =
       "100ms";
-    document.getElementById("phone_icon").style.transition = "50ms";
   }
 
   return (
@@ -49,6 +39,9 @@ export default function SlidingResponsiveNavbar() {
         <img id="navBarLogo" className="navBarLogo" src={logo} alt="logo" />
       </div>
       <nav className="navbar">
+        <a className="mobile-phone-icon" href="tel:+972538268640">
+          <i className="fas fa-phone" style={{ fontSize: "150%" }}></i>
+        </a>
         <span id="hamburger-button-id">
           <button className="open-slide" onClick={openSlideMenu}>
             <svg width="30" height="30">
@@ -63,21 +56,19 @@ export default function SlidingResponsiveNavbar() {
           <li>
             <NavLink to="/getintouch">
               <i
-                class="fab fa-facebook-square"
+                className="fab fa-facebook-square"
                 style={{ fontSize: "150%" }}
               ></i>
             </NavLink>
             <NavLink to="/getintouch">
-              <i class="fab fa-instagram" style={{ fontSize: "150%" }}></i>
+              <i className="fab fa-instagram" style={{ fontSize: "150%" }}></i>
             </NavLink>
           </li>
-          <li style={{ marginLeft: 40 }}>
-            <NavLink to="/getintouch">עב</NavLink>
-          </li>
+
           <li>
             <NavLink to="/getintouch">FR</NavLink>
           </li>
-          <li style={{ marginRight: 20 }}>
+          <li style={{ marginRight: 50 }}>
             <NavLink to="/getintouch">EN</NavLink>
           </li>
 
@@ -96,7 +87,7 @@ export default function SlidingResponsiveNavbar() {
 
           <li>
             <a href="tel:+972538268640">
-              <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
+              <i className="fas fa-phone" style={{ fontSize: "150%" }}></i>
             </a>
           </li>
         </ul>
@@ -114,13 +105,7 @@ export default function SlidingResponsiveNavbar() {
           <li id="contact-small-nav-item">
             <NavLink to="/getintouch">צור קשר</NavLink>
           </li>
-          <li id="phone_icon" style={{ opacity: 0 }}>
-            <a href="tel:+972538268640">
-              <i class="fas fa-phone" style={{ fontSize: "150%" }}></i>
-            </a>
-          </li>
         </ul>
-
         <button className="btn-close" onClick={closeSlideMenu}>
           &times;
         </button>

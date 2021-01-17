@@ -13,11 +13,11 @@ export default function Footer() {
             <p className="adress">אשדוד</p>
 
             <i
-              class="fab fa-facebook-square"
+              className="fab fa-facebook-square"
               style={{ fontSize: "150%", padding: 10 }}
             ></i>
             <i
-              class="fab fa-instagram"
+              className="fab fa-instagram"
               style={{ fontSize: "150%", padding: 10 }}
             ></i>
 
@@ -29,7 +29,7 @@ export default function Footer() {
                 <NavLink to="/companyprofile">פרופיל חברה</NavLink>
               </li>
               <li>
-                <a href="/" exact>
+                <a href="/" exact="true">
                   עמוד הבית
                 </a>
               </li>
