@@ -3,6 +3,7 @@ import const_image from "../Assets/img/project.jpg";
 import const_image2 from "../Assets/img/project2.jpg";
 import const_image3 from "../Assets/img/project3.jpeg";
 import const_image4 from "../Assets/img/project4.jpg";
+import const_image_jer from "../Assets/img/jerusalem-vila.jpeg";
 import "../Assets/css/aos.css";
 import "../Assets/css/projects.css";
 
@@ -39,8 +40,19 @@ export default function Projects() {
                 <h4>הכלנית 1</h4>
                 <p>בניית וילה</p>
                 <br></br>
-                {/* <h5> אלי לוסטיגמן </h5> */}
-                {/* <h6>05086736371</h6> */}
+              </div>
+            </div>{" "}
+            <div
+              data-aos="fade-up"
+              data-aos-offset="175"
+              className="project-partition"
+            >
+              <img onLoad={hideSpinner} src={const_image_jer} alt=""></img>
+              <div className="text-area">
+                <h3>קרית אונו</h3>
+                <h4> ירושלים 24</h4>
+                <p>בניית וילה</p>
+                <br></br>
               </div>
             </div>{" "}
             <div
