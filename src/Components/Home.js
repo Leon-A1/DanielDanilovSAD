@@ -28,6 +28,7 @@ export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1200 });
     closeSlideMenu();
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="main" onClick={closeSlideMenu}>
