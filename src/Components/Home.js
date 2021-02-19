@@ -23,6 +23,7 @@ function closeSlideMenu() {
   document.getElementById("profile-small-nav-item").style.transition = "150ms";
   document.getElementById("contact-small-nav-item").style.transition = "100ms";
 }
+
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 1200 });

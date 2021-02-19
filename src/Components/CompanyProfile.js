@@ -16,8 +16,14 @@ function closeSlideMenu() {
   document.getElementById("contact-small-nav-item").style.transition = "100ms";
 }
 export default function CompanyProfile() {
+  function hideSpinner() {
+    document.getElementById("main-spinner").style.opacity = "0";
+    document.getElementById("main-spinner").style.display = "none";
+  }
   useEffect(() => {
     closeSlideMenu();
+    window.scrollTo(0, 0);
+    hideSpinner();
   }, []);
   return (
     <div class="Page-layout-div" onClick={closeSlideMenu}>

@@ -20,9 +20,15 @@ function closeSlideMenu() {
   document.getElementById("contact-small-nav-item").style.transition = "100ms";
 }
 export default function GetInContact() {
+  function hideSpinner() {
+    document.getElementById("main-spinner").style.opacity = "0";
+    document.getElementById("main-spinner").style.display = "none";
+  }
   useEffect(() => {
     Aos.init({ duration: 3000 });
     closeSlideMenu();
+    window.scrollTo(0, 0);
+    hideSpinner();
   }, []);
   const [Message, setMessage] = useState();
 
