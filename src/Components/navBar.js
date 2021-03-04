@@ -42,6 +42,9 @@ export default function SlidingResponsiveNavbar() {
         <a className="mobile-phone-icon" href="tel:+972538268640">
           <i className="fas fa-phone" style={{ fontSize: "150%" }}></i>
         </a>
+        <a className="mobile-only-wa-icon" href="https://wa.me/972538268640">
+          <i class="fab fa-whatsapp-square" style={{ fontSize: "200%" }}></i>
+        </a>
         <span id="hamburger-button-id">
           <button className="open-slide" onClick={openSlideMenu}>
             <svg width="30" height="30">

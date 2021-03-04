@@ -22,6 +22,16 @@
 .mobile-phone-icon:hover {
   color: #3883c4;
 }
+.mobile-only-wa-icon {
+  position: fixed;
+  top: 39px;
+  left: 35%;
+  z-index: 15;
+  color: #8a8a8a;
+}
+.mobile-only-wa-icon:hover {
+  color: #3883c4;
+}
 .side-nav {
   height: 100%;
   text-align: center;
@@ -150,6 +160,7 @@
   .navbar button {
     display: block;
   }
+
   #topNavbarItems NavLink {
     display: none;
   }
@@ -193,5 +204,8 @@
     height: 100px;
     display: flex;
     justify-content: center;
+  }
+  .mobile-only-wa-icon {
+    display: none;
   }
 }
