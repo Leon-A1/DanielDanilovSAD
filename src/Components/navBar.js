@@ -87,7 +87,14 @@ export default function SlidingResponsiveNavbar() {
               עמוד הבית
             </NavLink>
           </li>
-
+          <li>
+            <a href="https://wa.me/972538268640">
+              <i
+                class="fab fa-whatsapp-square"
+                style={{ fontSize: "200%" }}
+              ></i>
+            </a>
+          </li>
           <li>
             <a href="tel:+972538268640">
               <i className="fas fa-phone" style={{ fontSize: "150%" }}></i>
